@@ -17,15 +17,28 @@ h1{
 }
 
 img{
-    height: 300px;
-    width: 300px;
-    border-radius: 500px;
+    height: auto;
+    width: 100%;
+    border-radius: 600px;
     
 }
+@media(min-width:1024px){
+    img{
+        height:500px;
+        width:500px;
+    }
+}
 video{
-    height: 500px;
-    width: 300px;
+    height:500px;
+    width:500px;
     object-fit: cover;
+}
+@media(max-width:600px){
+    video{
+           height: auto;
+            width: 100%;
+            object-fit: cover;
+    }
 }
 ol{
     list-style-type:upper-alpha;
@@ -48,8 +61,15 @@ button:hover{
 } */
 nav{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:20px;
+}
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction: row;
+        gap:50px;
+    }
 }
 
 #p2{
@@ -61,6 +81,12 @@ nav{
     font-size:x-large;
 }
 .grid{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display:grid;
+    grid-template-columns: auto;
+}
+@media(min-width:1024px){
+    .grid{
+        display: grid;
+        grid-template-columns: 13% 13% 13%;
+    }
 }
