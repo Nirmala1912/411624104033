@@ -1,0 +1,92 @@
+body{
+    color:brown;
+    background-color: mediumaquamarine;
+    
+}
+.phara{
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+    text-align: center;
+}
+h1{
+    color: red;
+    border: 3px solid red ;
+    padding: 50px;
+    margin:50px;
+}
+
+img{
+    height: auto;
+    width: 100%;
+    border-radius: 600px;
+    
+}
+@media(min-width:1024px){
+    img{
+        height:500px;
+        width:500px;
+    }
+}
+video{
+    height:500px;
+    width:500px;
+    object-fit: cover;
+}
+@media(max-width:600px){
+    video{
+           height: auto;
+            width: 100%;
+            object-fit: cover;
+    }
+}
+ol{
+    list-style-type:upper-alpha;
+    
+}
+ul{
+    list-style-type: none;
+}
+button{
+    background-color: blue;
+    text-shadow: 0cqmax;
+    padding: 20px;
+    margin:100px;
+}
+button:hover{
+    background-color: black;
+}
+/* .phara{
+    text-align: center;
+} */
+nav{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction: row;
+        gap:50px;
+    }
+}
+
+#p2{
+    font-style:normal;
+    text-align: center;
+    font-size:x-large ;
+}
+.group{
+    font-size:x-large;
+}
+.grid{
+    display:grid;
+    grid-template-columns: auto;
+}
+@media(min-width:1024px){
+    .grid{
+        display: grid;
+        grid-template-columns: 13% 13% 13%;
+    }
+}
